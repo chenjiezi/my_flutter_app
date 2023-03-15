@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/page/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,19 +11,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      // title: 'Flutter Demo',
-      // theme: ThemeData(
-      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      //   useMaterial3: true,
-      // ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: Scaffold(
-        appBar: AppBar(title: const Text('登录')),
-        body: const Row(
-          children: [Text('123')],
-        ),
-      ),
+    return const MaterialApp(
+      title: 'Flutter Demo',
+      initialRoute: '/',
+      // routes: {
+      //   '/': (context) => const MyHomePage(title: '123'),
+      // },
+      home: LoginPage(),
     );
   }
 }
