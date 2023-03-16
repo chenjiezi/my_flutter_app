@@ -13,10 +13,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
-      initialRoute: '/',
-      // routes: {
-      //   '/': (context) => const MyHomePage(title: '123'),
-      // },
       home: LoginPage(),
     );
   }
